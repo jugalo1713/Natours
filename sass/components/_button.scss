@@ -1,5 +1,6 @@
 .btn {
 
+    &,
     &:link,
     &:visited {
         text-transform: uppercase;
@@ -11,6 +12,10 @@
         /* relative so the ::after  psudu eleents get positioned correctly */
         position: relative;
         font-size: $default-font-size;
+
+        //chancge for <button>
+        border: none;
+        cursor: pointer;
     }
 
     &:hover {
@@ -23,7 +28,8 @@
         }
     }
 
-    &:active {
+    &:active,
+    &:focus {
         transform: translate(-1px);
         box-shadow: 0 .5rem 1rem rgba($color-black, .2);
     }
