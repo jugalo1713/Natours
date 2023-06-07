@@ -44,7 +44,6 @@
     }
 
     &__list {
-        position: absolute;
         @include centerWithAbsolutePosition;
         list-style: none;
         text-align: center;
