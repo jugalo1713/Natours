@@ -4,7 +4,7 @@
     -moz-perspective: 150rem;
     position: relative;
     height: 52rem;
-    box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
+    //box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
 
     &__side {
         height: 52rem;
@@ -17,7 +17,7 @@
         backface-visibility: hidden;
         border-radius: 3px;
         overflow: hidden;
-        box-shadow: none;
+        box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
 
         &--back {
             transform: rotateY(180deg);
@@ -151,11 +151,11 @@
     @include respond(tab-port) {
         height: auto;
         border-radius: 3px;
-        background-color: $color-white;
 
         &__side {
             height: auto;
             position: relative;
+            box-shadow: none;
 
             &--back {
                 transform: rotateY(0);
